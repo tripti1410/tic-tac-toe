@@ -1,10 +1,10 @@
 import React from "react";
 import "./board-box.css";
 
-function BoardBox(box) {
+function BoardBox({ value, onClick }) {
   return (
-    <button role="button" className="board-box">
-      f
+    <button role="button" className="board-box" onClick={onClick}>
+      {value}
     </button>
   );
 }
