@@ -1,0 +1,8 @@
+.board {
+  --box-size: 30rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: var(--box-size);
+  height: var(--box-size);
+  margin: 10rem auto;
+}

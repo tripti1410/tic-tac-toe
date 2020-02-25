@@ -1,5 +1,53 @@
+:root {
+  /* Monochromatic colors */
+  --mono-1: #f9f9f9;
+  --mono-2: #f0f1f5;
+  --mono-3: #c6ccd5;
+  --mono-4: #5f6978;
+  --mono-5: #132437;
+  /* Action Colors */
+  --danger: #ff214b;
+  --success: #2fd072;
+  --warning: #f5a623;
+  --white: #fff;
+  --black: #000;
+  /* Accent colors */
+  --accent-1: #f8e71c;
+  --accent-2: #7842b9;
+
+  /* Font weight: ; */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Font Scale */
+  --fs-xxs: 1rem;
+  --fs-xs: 1.2rem;
+  --fs-s: 1.4rem;
+  --fs-m: 1.6rem;
+  --fs-l: 2.4rem;
+  --fs-xl: 3.2rem;
+  --fs-xxl: 4rem;
+  --fs-jumbo: 4.8rem;
+
+  /* Line height */
+  --lh-1: 1;
+  --lh-2: 1.2;
+  --lh-3: 1.3;
+  --lh-4: 1.4;
+  --lh-5: 1.5;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-family: "Roboto";
+  font-size: var(--fs-m);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-5);
+  color: var(--mono-5);
+  background-color: var(--mono-1);
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
 }
