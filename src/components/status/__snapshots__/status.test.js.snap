@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly - default state 1`] = `
+<div
+  className="status-container"
+>
+  Result: 
+  
+</div>
+`;
+
+exports[`test renders correctly - default state 1`] = `
+<div
+  className="status-container">
+  Result: 
+  
+</div>
+`;

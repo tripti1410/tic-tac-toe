@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly - default state 1`] = `
+<button
+  className="reset-button"
+  role="button"
+/>
+`;
+
+exports[`test renders correctly - default state 1`] = `
+<button
+  className="reset-button"
+  onClick={undefined}
+  role="button" />
+`;
