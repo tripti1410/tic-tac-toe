@@ -1,7 +1,7 @@
 import React from "react";
 import BoardBox from "../board-box/board-box";
 import "./board.css";
-
+import { findWinner, isAllBoxesFilled } from "../../utils";
 
 class Board extends React.Component {
   constructor(props) {
@@ -13,23 +13,20 @@ class Board extends React.Component {
   }
 
   handleBoxClick(boxNumber) {
-    console.log(boxNumber, "fff")
     const boxes = this.state.boxes;
     //set the value to 'x' or 'o'
-    if (this.state.isNext) {
-      boxes[boxNumber] = 'x'
-    } else {
-      boxes[boxNumber] = '0'
-    }
+    this.state.isNext ? boxes[boxNumber] = 'x' : boxes[boxNumber] = '0'
     this.setState({
       boxes: boxes,
       isNext: !this.state.isNext
     })
-    //Stop game if all boxes filled
-    if (!this.state.boxes.includes(null)) {
-      return
-    }
 
+    //If all boxes are filled and no one wins
+    isAllBoxesFilled(this.state.boxes) && alert('no one won')
+
+    //Stop game if it is win condition
+    findWinner(boxes, boxNumber) && alert(findWinner(boxes, boxNumber));
+    return
   }
 
   resetGame() {

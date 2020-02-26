@@ -3,7 +3,7 @@ import "./board-box.css";
 
 function BoardBox({ value, onClick }) {
   return (
-    <button role="button" className="board-box" onClick={onClick}>
+    <button role="button" className='board-box' disabled={value} onClick={onClick}>
       {value}
     </button>
   );

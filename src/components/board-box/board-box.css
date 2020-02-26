@@ -7,6 +7,11 @@
   cursor: pointer;
   margin: 0;
 }
+.board-box:disabled {
+  background-color: var(--mono-2);
+  color: var(--black);
+}
+
 .board-box:nth-child(5) {
   border: 0.5rem solid var(--black);
 }
