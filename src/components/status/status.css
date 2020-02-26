@@ -1,0 +1,13 @@
+.status-container {
+  height: 10rem;
+  width: var(--board-size);
+  margin-top: 8rem;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-l);
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+}

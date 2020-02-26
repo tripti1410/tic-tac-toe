@@ -1,14 +1,33 @@
 .board {
-  --box-size: 30rem;
   display: grid;
   grid-template-columns: repeat(3, 10rem);
   grid-template-rows: repeat(3, 10rem);
-  width: var(--box-size);
-  height: var(--box-size);
-  margin: 10rem auto;
+  width: var(--board-size);
+  height: var(--board-size);
 }
 .reset-button {
   font-size: var(--fs-l);
   background-color: var(--mono-5);
+  border-radius: 0.8rem;
   color: var(--white);
+  box-shadow: var(--box-shadow-1);
+  padding: 0.8rem 2.4rem;
+  cursor: pointer;
+}
+
+.new-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--board-size);
+  transform: translate(0%, 0%);
+  height: 2rem;
+  transition: all 0.8s ease-out;
+}
+
+.new-game-container.slide-in {
+  transform: translate(0%, -113%);
+  background-color: var(--white);
+  transition: all 0.8s ease-in;
+  height: 30.5rem;
 }

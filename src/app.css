@@ -1,0 +1,8 @@
+.wrapper {
+  max-width: 100vw;
+  max-height: 100vh;
+  display: grid;
+  grid-gap: 4rem;
+  justify-items: center;
+  align-items: center;
+}
