@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-# Tic Toc Toe
+# Tic Tac Toe
 
 This is only frontend app. It is a simple game, created to showcase the work. 
 1. Didn't used redux as it was a very simple task.
