@@ -1,8 +1,11 @@
 import React from "react";
 import cs from 'classnames';
-import BoardBox from "../board-box/board-box";
-import "./board.css";
+
 import { findWinner, isAllBoxesFilled } from "../../utils";
+import BoardBox from "../board-box/board-box";
+import Button from '../../components/button/button';
+
+import "./board.css";
 
 class Board extends React.Component {
   constructor(props) {
@@ -55,7 +58,7 @@ class Board extends React.Component {
           ))}
         </div>
         <div className={cs('new-game-container', { 'slide-in': this.state.startNewGame })}>
-          <button role="button" onClick={() => this.resetGame()} className='reset-button'>New Game</button>
+          <Button clickHandle={() => this.resetGame()} buttonLabel="New Game" />
         </div>
       </React.Fragment>
     );
