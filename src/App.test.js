@@ -10,7 +10,7 @@ it("renders without crashing", () => {
   ReactDOM.render(<App />, div);
 });
 
-it("render components", () => {
+it("should render components", () => {
   const wrapper = shallow(<App />);
   expect(wrapper.find(Status)).toHaveLength(1);
   expect(wrapper.find(Board)).toHaveLength(1);
